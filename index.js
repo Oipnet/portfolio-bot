@@ -1,6 +1,6 @@
 require('dotenv').config()
 const app = require('express')()
-const http = require('http').createServer(app)
+const http = require('https').createServer(app)
 const io = require('socket.io')(http);
 const Discord = require('discord.js')
 const bot = new Discord.Client()
@@ -9,7 +9,6 @@ bot.login(process.env.BOT_TOKEN)
 
 
 bot.on('ready', () => {
-    bot.guilds.find(guild => guild.name === 'oipnet').members.first().roles.map(role => console.log(role))
     const sockets = []
 
     bot.channels
