@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "10"
+
+cache:
+  directories:
+    - "node_modules"
+
+branches:
+  only:
+  - master
+
+install:
+  - npm install
+  
+deploy:
+  provider: heroku
+  api_key:
+    secure: h0OyE2wPVHPnxbZN3QePnACYJ0bd0rPbZCERXW4wKWE2J8IaR7jOEynbD9ncqqzSLVNajwDrSpz+YzJZfPSs1MOQqYtGoWpIUiM/xAcjXl7+SQ7LWBSQx/hbEYKWo90l9APTqUcQ6zPQnYLFnM5JumuKdFdnGC2/1oX5PckQRjdHWr3f48GPjpL3q9rtIIRl4MSeqHX3kUyGsws3i6idzbe+PPw2j7609XAnPRt/Kwjel23cVfddgcznzzAG+KxpQN81768LVjhZIWzGDsWSB5Ih9cUvENZAPzksqEg+jfVLloriwDvsfFRVqUjDA87WF7YjYAsWAuGzYv9H2MH8Nt1j7+H7a72ev3PwC+0W9JU3Bs01B26/RLAZ4WeSIgTv10tcDol9I2eRxUTCXBi5cDlyJdSyn9bNF4d1Dpb/s5kkNjql+DYrYYQkJFNegJW3HglIH44h2Z5zF4YW4rlJNOlCGtTX9b1Py0nfYJeRM0C+LXf9Xb8ekElR7N1PRUXcnOTXZoyoTLWyCLb+RPZKq0QXZIJz6LjdltKhxP5+/hrwT9psgDmZbn3OlJANyDOVG/uIQ45Agi5CXextUxYC1yXbKleevHgpXyhIO+kj0fGutKvgQux6XDaa0itiz2O7F0isOhTQzelo/9N/0+S9siUOcrE40Il2RnRaQA+LBis=
+  app: porfolio-bot
