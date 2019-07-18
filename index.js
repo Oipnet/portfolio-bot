@@ -73,7 +73,7 @@ bot.on('ready', () => {
         });
     });
 
-    http.listen(process.env.SOCKET_PORT || process.env.PORT || 6666, () => {
-        console.log(`Listening on port ${process.env.SOCKET_PORT || 6666}`)
+    http.listen(process.env.SOCKET_PORT || process.env.PORT || 66666, () => {
+        console.log(`Listening on port ${process.env.SOCKET_PORT || 66666}`)
     })
 })
